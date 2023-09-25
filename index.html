@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+            <script>
+                let getBody = document.body;
+
+                let myElement = document.createElement("h1");
+
+                let getDate = new Date();
+                let getHour = getDate.getHours();
+
+                let textMessage;
+
+                if(getHour >=0 && getHour < 12){
+                    textMessage = "Good Morning Dear ANIFA" ;
+                } else if(getHour >=12 && getHour < 16){
+                    textMessage = "Good Afternoon Dear ANIFA" ;
+                } else if(getHour >=16 && getHour < 20){
+                    textMessage = "Good Evening Dear ANIFA" ;
+                } else if(getHour >=20 && getHour < 23){
+                    textMessage = "Good night Dear ANIFA" ;
+                } else{
+                    textMessage = "Are you from this planet ? :O" ;
+                } 
+
+                let myTextNode =document.createTextNode(textMessage);
+
+                myElement.appendChild(myTextNode);
+
+                getBody.appendChild(myElement);
+
+                myElement.style.cssText = "text-align:center;font-family:arial;font-size:20px;color:#222";
+
+
+
+
+
+            </script>
+
+</script>                
+</html>
